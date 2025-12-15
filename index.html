@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SaaSify – Modern Web Development Course</title>
+  <link href="output.css" rel="stylesheet" />
+</head>
+
+<body class="bg-white text-gray-800">
+
+<!-- ================= NAVBAR ================= -->
+<div class="container mx-auto bg-green-200 shadow-md">
+  <nav class="flex justify-between items-center py-4 px-4">
+
+    <!-- Brand -->
+    <div class="flex items-center gap-3">
+      <img class="h-12 w-12 rounded-full" src="https://picsum.photos/200" alt="logo">
+      <div>
+        <h1 class="text-xl font-bold">SaaSify</h1>
+        <p class="text-xs text-gray-600">Build • Launch • Scale</p>
+      </div>
+    </div>
+
+    <!-- Menu -->
+    <ul class="hidden md:flex space-x-8 font-medium">
+      <li><a class="hover:text-red-500" href="#">Home</a></li>
+      <li><a class="hover:text-red-500" href="#">Course</a></li>
+      <li><a class="hover:text-red-500" href="#pricing">Pricing</a></li>
+      <li><a class="hover:text-red-500" href="#stories">Stories</a></li>
+      <li><a class="hover:text-red-500" href="#footer">Contact</a></li>
+    </ul>
+
+    <!-- CTA -->
+    <div class="hidden md:flex gap-4">
+      <button class="px-5 py-2 rounded-full border border-green-500 text-green-600 hover:bg-green-500 hover:text-white transition">
+        Login
+      </button>
+      <button class="px-5 py-2 rounded-full bg-green-500 text-white hover:bg-red-500 transition">
+        Enroll Now
+      </button>
+    </div>
+
+    <!-- Mobile -->
+    <button class="md:hidden mobile-icon">
+      <svg class="h-10 w-10" viewBox="0 0 24 24" fill="none">
+        <path d="M4 6H20M4 12H20M4 18H20" stroke="#000" stroke-width="2"/>
+      </svg>
+    </button>
+
+  </nav>
+</div>
+
+<!-- ================= HERO ================= -->
+<div class="container mx-auto mt-20 flex flex-col-reverse md:flex-row items-center gap-14 px-4">
+  <div class="md:w-1/2 text-center md:text-left">
+    <span class="text-green-500 font-semibold">🚀 Online SaaS Course</span>
+
+    <h1 class="text-4xl md:text-5xl font-bold mt-4 mb-6">
+      Master Modern Web Development with
+      <span class="text-indigo-600"> SaaSify</span>
+    </h1>
+
+    <p class="text-gray-600 mb-6">
+      Learn to build real-world SaaS landing pages, pricing systems,
+      and UI layouts used by top tech companies.
+    </p>
+
+    <div class="flex gap-4 justify-center md:justify-start">
+      <button class="bg-blue-700 text-white px-8 py-3 rounded-full hover:bg-blue-800 transition">
+        Start Learning
+      </button>
+      <button class="border border-blue-700 text-blue-700 px-8 py-3 rounded-full hover:bg-blue-700 hover:text-white transition">
+        View Curriculum
+      </button>
+    </div>
+  </div>
+
+  <div class="md:w-1/2">
+    <img class="mx-auto max-w-md"
+      src="https://illustrations.popsy.co/blue/work-from-home.svg"
+      alt="Hero">
+  </div>
+</div>
+
+<!-- ================= FEATURES ================= -->
+<div class="container mx-auto mt-28 grid md:grid-cols-3 gap-8 px-4">
+  <div class="bg-gray-100 p-6 rounded-2xl text-center hover:shadow-xl transition">
+    <img class="h-16 mx-auto mb-4"
+      src="https://cdn-icons-png.flaticon.com/512/2721/2721290.png">
+    <h2 class="text-2xl">Web Development</h2>
+    <p>Responsive, SEO-friendly websites.</p>
+  </div>
+
+  <div class="bg-gray-100 p-6 rounded-2xl text-center hover:shadow-xl transition">
+    <img class="h-16 mx-auto mb-4"
+      src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png">
+    <h2 class="text-2xl">SaaS UI Design</h2>
+    <p>Pricing, dashboards & layouts.</p>
+  </div>
+
+  <div class="bg-gray-100 p-6 rounded-2xl text-center hover:shadow-xl transition">
+    <img class="h-16 mx-auto mb-4"
+      src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+    <h2 class="text-2xl">Career Ready</h2>
+    <p>Portfolio-ready SaaS projects.</p>
+  </div>
+</div>
+
+<!-- ================= PRICING ================= -->
+<div id="pricing" class="container mx-auto mt-32 px-4">
+  <div class="text-center mb-12">
+    <h1 class="text-3xl font-bold text-green-500">Pricing</h1>
+    <p class="text-gray-600">Choose your learning plan</p>
+  </div>
+
+  <div class="grid md:grid-cols-3 gap-10 justify-items-center">
+
+    <!-- Card -->
+    <div class="relative bg-gray-200 w-80 pt-10 pb-16 rounded-2xl text-center
+                hover:scale-105 hover:shadow-2xl transition duration-300">
+      <h1 class="text-5xl font-bold">$99</h1>
+      <p>Basic</p>
+      <button
+        class="absolute left-1/2 -bottom-6 -translate-x-1/2
+               bg-indigo-500 text-white px-8 py-3 rounded-full
+               hover:bg-indigo-600 transition">
+        Get Started
+      </button>
+    </div>
+
+    <div class="relative bg-gray-200 w-80 pt-10 pb-16 rounded-2xl text-center border-2 border-indigo-500
+                hover:scale-105 hover:shadow-2xl transition duration-300">
+      <h1 class="text-5xl font-bold">$199</h1>
+      <p>Advanced</p>
+      <button
+        class="absolute left-1/2 -bottom-6 -translate-x-1/2
+               bg-indigo-500 text-white px-8 py-3 rounded-full
+               hover:bg-indigo-600 transition">
+        Get Started
+      </button>
+    </div>
+
+    <div class="relative bg-gray-200 w-80 pt-10 pb-16 rounded-2xl text-center
+                hover:scale-105 hover:shadow-2xl transition duration-300">
+      <h1 class="text-5xl font-bold">$299</h1>
+      <p>Pro</p>
+      <button
+        class="absolute left-1/2 -bottom-6 -translate-x-1/2
+               bg-indigo-500 text-white px-8 py-3 rounded-full
+               hover:bg-indigo-600 transition">
+        Get Started
+      </button>
+    </div>
+
+  </div>
+</div>
+
+<!-- ================= STORIES ================= -->
+<div id="stories" class="container mx-auto mt-32 px-4">
+  <div class="text-center mb-12">
+    <h3 class="text-green-500 font-semibold">Recent Updates</h3>
+    <h1 class="text-4xl font-bold">Featured Stories</h1>
+  </div>
+
+  <div class="grid md:grid-cols-3 gap-8">
+
+    <div class="bg-gray-100 rounded-2xl overflow-hidden hover:shadow-2xl transition">
+      <img class="w-full h-48 object-cover"
+        src="https://picsum.photos/400/300?1">
+      <div class="p-6 text-center">
+        <h2 class="text-indigo-500 text-xl font-semibold">SEO Growth</h2>
+        <p class="text-gray-600 mt-2">How SaaS companies scale traffic.</p>
+      </div>
+    </div>
+
+    <div class="bg-gray-100 rounded-2xl overflow-hidden hover:shadow-2xl transition">
+      <img class="w-full h-48 object-cover"
+        src="https://picsum.photos/400/300?2">
+      <div class="p-6 text-center">
+        <h2 class="text-indigo-500 text-xl font-semibold">Remote Teams</h2>
+        <p class="text-gray-600 mt-2">Building distributed products.</p>
+      </div>
+    </div>
+
+    <div class="bg-gray-100 rounded-2xl overflow-hidden hover:shadow-2xl transition">
+      <img class="w-full h-48 object-cover"
+        src="https://picsum.photos/400/300?3">
+      <div class="p-6 text-center">
+        <h2 class="text-indigo-500 text-xl font-semibold">Career Roadmap</h2>
+        <p class="text-gray-600 mt-2">SaaS skills for 2025.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer id="footer" class="bg-gray-900 text-gray-300 mt-32">
+  <div class="container mx-auto px-6 py-14 grid md:grid-cols-4 gap-10">
+
+    <div>
+      <h2 class="text-2xl font-bold text-white mb-4">SaaSify</h2>
+      <p>Modern web development course & platform.</p>
+    </div>
+
+    <div>
+      <h3 class="text-white font-semibold mb-4">Company</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-white">About</a></li>
+        <li><a href="#" class="hover:text-white">Careers</a></li>
+        <li><a href="#" class="hover:text-white">Blog</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-white font-semibold mb-4">Support</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-white">Help Center</a></li>
+        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+        <li><a href="#" class="hover:text-white">Terms</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-white font-semibold mb-4">Follow Us</h3>
+      <ul class="space-y-2">
+        <li><a href="https://github.com" target="_blank" class="hover:text-white">GitHub</a></li>
+        <li><a href="https://linkedin.com" target="_blank" class="hover:text-white">LinkedIn</a></li>
+        <li><a href="https://twitter.com" target="_blank" class="hover:text-white">Twitter</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="border-t border-gray-700 text-center py-4 text-sm">
+    © 2025 SaaSify. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
